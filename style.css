@@ -1,0 +1,261 @@
+/* ===========================
+   Réinitialisation
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+#accueil {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#accueil img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#accueil h1 {
+    font-size: 2.5rem;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+#accueil p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#accueil a {
+    background-color: #2563EB;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#accueil a:hover {
+    background-color: #1E40AF;
+}
+
+section {
+    padding: 80px 40px;
+}
+
+section h2 {
+    text-align: center;
+    color: #1E3A8A;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* ===========================
+   CARTES
+=========================== */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cards article {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cards article:hover {
+    transform: translateY(-8px);
+}
+
+.cards h3 {
+    color: #1E3A8A;
+    margin-bottom: 15px;
+}
+/* ===========================
+   FORMULAIRE
+=========================== */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1E40AF;
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+/* ===========================
+   TABLETTE
+=========================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #accueil h1 {
+        font-size: 2rem;
+    }
+
+    .cards article {
+        width: 90%;
+    }
+
+}
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #accueil img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #accueil h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+}
+
+#resultat{
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
